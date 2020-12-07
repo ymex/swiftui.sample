@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		02C7102D257E2222001527E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C7102C257E2222001527E5 /* Preview Assets.xcassets */; };
 		02C71038257E2222001527E5 /* swiftui_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71037257E2222001527E5 /* swiftui_sampleTests.swift */; };
 		02C71043257E2222001527E5 /* swiftui_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71042257E2222001527E5 /* swiftui_sampleUITests.swift */; };
+		02C71058257E2675001527E5 /* TabViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71057257E2675001527E5 /* TabViewPage.swift */; };
+		02C7105E257E2ADC001527E5 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 02C7105D257E2ADC001527E5 /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 		02C71042257E2222001527E5 /* swiftui_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_sampleUITests.swift; sourceTree = "<group>"; };
 		02C71044257E2222001527E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02C71053257E2324001527E5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		02C71057257E2675001527E5 /* TabViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C7105E257E2ADC001527E5 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +106,7 @@
 				02C71029257E2222001527E5 /* Assets.xcassets */,
 				02C7102E257E2222001527E5 /* Info.plist */,
 				02C7102B257E2222001527E5 /* Preview Content */,
+				02C71057257E2675001527E5 /* TabViewPage.swift */,
 			);
 			path = swiftui.sample;
 			sourceTree = "<group>";
@@ -148,6 +153,9 @@
 			dependencies = (
 			);
 			name = swiftui.sample;
+			packageProductDependencies = (
+				02C7105D257E2ADC001527E5 /* Introspect */,
+			);
 			productName = swiftui.sample;
 			productReference = 02C71022257E2220001527E5 /* swiftui.sample.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 02C71019257E2220001527E5;
+			packageReferences = (
+				02C7105C257E2ADC001527E5 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = 02C71023257E2220001527E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C71058257E2675001527E5 /* TabViewPage.swift in Sources */,
 				02C71028257E2220001527E5 /* ContentView.swift in Sources */,
 				02C71026257E2220001527E5 /* swiftui_sampleApp.swift in Sources */,
 			);
@@ -582,6 +594,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02C7105C257E2ADC001527E5 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02C7105D257E2ADC001527E5 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C7105C257E2ADC001527E5 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02C7101A257E2220001527E5 /* Project object */;
 }
